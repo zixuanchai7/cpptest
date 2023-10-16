@@ -9,8 +9,11 @@ public:
     String(const char* cstr=0);
     // 只要类带着指针一定要实现 拷贝构造和拷贝赋值 
 
+    
     String(const String& str);
     String& operator = (const String& str);
+    
+
     ~String();
     char* get_c_str() const {return m_data;}
 
